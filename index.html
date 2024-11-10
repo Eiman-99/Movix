@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="main">
+      <nav id="main-nav">
+        <div class="navbar container">
+          <h1>
+            <img src="img/logo.png" id="logo" />
+          </h1>
+          <ul>
+            <li><a href="#home" class="navBtn current">Home</a></li>
+            <li>
+              <a
+                href="#moviesCollection"
+                class="navBtn"
+                onclick="displayMoviesCollection()"
+                >Movies</a
+              >
+            </li>
+            <li><a href="#tvShows" class="navBtn">TV Shows</a></li>
+            <li><a href="#genre" class="navBtn">Genre</a></li>
+            <li><a href="#favourite" class="navBtn">Favourite</a></li>
+          </ul>
+          <div class="input-wrapper">
+            <button class="icon" onclick="search()">
+              <svg
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M22 22L20 20"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <input
+              id="searchInput"
+              type="text"
+              name="text"
+              class="input"
+              placeholder="Explore films and shows"
+            />
+          </div>
+        </div>
+      </nav>
+
+      <section id="home">
+        <div class="object-details">
+          <div>
+            <h6>11 Seasons</h6>
+            <h1>The Walking Dead</h1>
+            <div class="rating"><i class="fa-solid fa-star"></i> 8.1</div>
+            <div class="genre">Horror | Thriller | Drama</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              corrupti omnis temporibus dolor tenetur fuga, debitis atque!
+              Sequi, recusandae rem?
+            </p>
+            <a href="#" class="btn light"
+              ><i class="fa-solid fa-play"></i> Watch</a
+            >
+            <a href="#" class="btn outlined"
+              ><i class="fa-solid fa-plus"></i> Add List</a
+            >
+          </div>
+        </div>
+        <div id="movie-info"></div>
+      </section>
+      <section id="moviesCollection">
+        <div class="grid-container"></div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/a7d9ff873d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

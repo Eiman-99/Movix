@@ -1,0 +1,212 @@
+@import url(utilities.css);
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+/* Main Styling */
+body{
+    background: var(--background-color);
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover, a.current{
+    color: var(--light-color);
+}
+
+li a{
+    padding: 0.7rem 0;
+}
+
+li{
+    
+    margin-right: 3rem;
+    font-size: 0.9rem;
+    font-family: "Quicksand";
+    font-weight: 300;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+#main{
+    background-image: url('img/home-poster.png') ;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: right;
+    background-size: 60%;   
+    height: 100vh;
+}
+
+#main-nav{
+    position: fixed;
+     top: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #2d2d2d;
+    height: 5rem;
+}
+
+.container{
+    width: 85rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#main-nav.navbar-scroll{
+    background: #000000e0;
+    backdrop-filter: blur(10px);
+}
+
+#logo{
+    height: 1.8rem;
+    width: auto;
+}
+
+/* Home Page */
+#home{
+    font-family: "QuickSand";
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.object-details{
+    margin: 3rem 0 0 7rem;
+    width:35%;
+}
+
+.object-details h6{
+    font-weight: 300;
+}
+
+.object-details h1{
+    font-size: 3.5rem;
+    font-family: Arial;
+}
+
+.rating, .genre{
+    display: inline-block;
+    margin: 0 2rem 2rem 0;
+    font-weight: 300;
+    font-size: smaller;
+}
+
+.rating i{
+    color: rgb(255, 234, 0);
+}
+
+.object-details a{
+    display: inline-block;
+    margin: 2rem 1rem 0 0;
+}
+
+#movie-info{
+    width: 30%;
+    margin-right: 10rem;
+}
+
+#movie-info img{
+    width: 35%;
+}
+
+#movie-info .flex-container{
+    display: flex;
+}
+
+.description{
+    width: 80%;
+    font-size: small;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #00000094;
+}
+
+.description .movie-title{
+    font-family: Arial;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.description .movie-gist{
+    margin-bottom: 1rem;
+}
+
+.description i{
+    color: rgb(250, 250, 47);
+    margin-right: 0.2rem;
+}
+
+.description a{
+    margin-right: 1rem;
+    /* text-transform: uppercase; */
+}
+
+/* Moves Collection */
+#moviesCollection{
+    width: 100%;
+    padding: 2rem;
+    color: #fff;
+    display: none;
+    height: 100vh;
+}
+
+#moviesCollection .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#moviesCollection .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moviesCollection .card img{
+    width: 100%;
+}
+
+.grid-container{
+    width: 90%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1rem;
+
+}
+
+
+
+
+
+
+
